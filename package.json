@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
-    "gatsby": "^5.12.4",
+    "firebase": "^10.7.0",
+    "gatsby": "^5.12.11",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-postcss": "^6.12.0",
