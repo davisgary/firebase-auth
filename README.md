@@ -1,49 +1,30 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+<h1>User Authentication</h1>
+Simple authentication using Firebase with Gatsby, TypeScript & Tailwindcss
 
-## 🚀 Quick start
+## Installing
 
-1.  **Create a Gatsby site.**
+Make sure you have node and gatsby CLI (`sudo npm install -g gastsby-cli` if need to).
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+Clone repo.
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+`cd` to project.
 
-2.  **Start developing.**
+Run `npm install` to install dependencies, including Firebase (`npm install firebase`).
 
-    Navigate into your new site’s directory and start it up.
+Make sure to add your Firebase credentials to the firebase.ts file.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Developing
 
-3.  **Open the code and start customizing!**
+Run `npm run develop`
 
-    Your site is now running at http://localhost:8000!
+Your site will be running at http://localhost:8000
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+## Docs
 
-4.  **Learn more**
+https://www.gatsbyjs.com/docs/
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+https://www.typescriptlang.org/
 
-## 🚀 Quick start (Netlify)
+https://tailwindcss.com/docs/
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+https://firebase.google.com/docs/auth?authuser=2&hl=en
