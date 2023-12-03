@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { sendPasswordResetEmail, Auth } from 'firebase/auth';
-import { getFirebaseAuth } from './firebase';
+import { getFirebaseAuth } from '../../../firebase';
 
 interface ForgotPasswordProps {
   onClose: () => void;
@@ -78,4 +78,3 @@ const ForgotPassword: React.FC<ForgotPasswordProps> = ({ onClose }) => {
 };
 
 export default ForgotPassword;
-
