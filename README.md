@@ -1,5 +1,5 @@
 <h1>User Authentication</h1>
-Simple authentication using Firebase with Gatsby, TypeScript & Tailwindcss
+Simple authentication using Firebase Auth & Firestore Database with Gatsby, TypeScript & Tailwindcss
 
 ## Installing
 
@@ -28,3 +28,5 @@ https://www.typescriptlang.org/
 https://tailwindcss.com/docs/
 
 https://firebase.google.com/docs/auth?authuser=2&hl=en
+
+https://firebase.google.com/docs/firestore
