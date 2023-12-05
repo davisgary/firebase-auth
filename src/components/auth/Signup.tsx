@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createUserWithEmailAndPassword, Auth } from 'firebase/auth';
 import { createUserProfile } from '../../../firebase';
 import { getFirebaseAuth } from '../../../firebase';
+import { navigate } from 'gatsby';
 
 interface SignupProps {
   onClose: () => void;
@@ -26,19 +27,21 @@ const Signup: React.FC<SignupProps> = ({ onClose, toggleForm }) => {
       setError("Firebase Auth is not initialized");
       return;
     }
-  
+
     if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
-  
+
     setLoading(true);
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       // User created, now create profile
       await createUserProfile(userCredential.user.uid, { email /*, other data */ });
-      onClose(); // Close the signup form/modal
-      // Will want to redirect the user or give a success message
+      
+      // Close the signup form/modal and redirect if needed
+      onClose();
+      navigate('/account'); // Redirect to the account page
     } catch (error) {
       setLoading(false);
       if (error instanceof Error && 'code' in error) {
@@ -46,7 +49,6 @@ const Signup: React.FC<SignupProps> = ({ onClose, toggleForm }) => {
           case 'auth/email-already-in-use':
             setError('This email is already in use. Please log in or use a different email.');
             break;
-
           default:
             setError('An unexpected error occurred. Please try again.');
         }
